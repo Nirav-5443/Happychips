@@ -17,6 +17,12 @@ Class DbHelper(context:Context):SQLiteOpenHelper(context,"STUDENTDB",null,1) {
     }
 }
 
+
+
+
+
+
+
 SignUp Page
 
 signup2.setOnClickListener {
@@ -87,7 +93,24 @@ signup2.setOnClickListener {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Login Page
+
+
 //connection variables
 var helper = DbHelper(applicationContext)
 var db: SQLiteDatabase = helper.writableDatabase
@@ -148,7 +171,17 @@ if(userid.text.toString() !="" && password.text.toString() != "")
     }
 }
 
+
+
+
+
+
+
+
+
+
 Add Teacher Details Page / Add Manager Details
+
 //Connection Variables
 
 var helper = DbHelper(applicationContext)
@@ -216,7 +249,16 @@ var helper = DbHelper(applicationContext)
      }
 }
 
+
+
+
+
+
+
+
+
 Home Page
+
 
 var helper = DbHelper(applicationContext)
         var db: SQLiteDatabase = helper.writableDatabase
@@ -262,7 +304,14 @@ var helper = DbHelper(applicationContext)
     }
 
 }
+
+
+
+
+
 Add StudentInfo / Employeeinfo
+
+
 var helper = DbHelper(applicationContext)
         var db: SQLiteDatabase = helper.writableDatabase
         var intent = getIntent()
@@ -313,7 +362,19 @@ var helper = DbHelper(applicationContext)
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 Custom Adapter for List View 
+
+
 class CustomAdapter(
     var allstudents: AllStudents,
     var rno: ArrayList<String>,
@@ -341,7 +402,18 @@ class CustomAdapter(
     }
 
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 All Students / Employees
+    
+    
 
 var helper = DbHelper(applicationContext)
         var db: SQLiteDatabase = helper.writableDatabase
@@ -378,8 +450,18 @@ var helper = DbHelper(applicationContext)
 
     }
 }
+    
+    
+    
+    
+    
+    
+    
 
 all student xmls
+    
+    
+    
 <TextView
     android:id="@+id/tvrno"
     android:layout_width="wrap_content"
@@ -412,8 +494,16 @@ all student xmls
     app:layout_constraintStart_toStartOf="parent" />
 
 
+    
+    
+    
+    
+    
 
 home or teacher details xml
+    
+    
+    
 <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -675,8 +765,17 @@ home or teacher details xml
 
         </FrameLayout>
 
+    
+    
+    
+    
+    
+    
 listitems xml
 
+    
+    
+    
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
